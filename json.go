@@ -1,5 +1,12 @@
 package files
 
+import (
+	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"os"
+)
+
 // ReadJson - here everything is clear
 func ReadJson(path string, dest interface{}) error {
 	data, err := ioutil.ReadFile(path)
